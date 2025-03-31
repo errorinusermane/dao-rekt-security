@@ -55,7 +55,7 @@ dao-rekt-security/
 
 ---
 
-## ✅ 실행 방법
+## 🧪 실행 방법
 
 ```bash
 # 의존성 설치
@@ -64,6 +64,20 @@ npm install
 # 테스트 실행
 npx hardhat test
 ```
+
+---
+
+## ✅ 테스트 결과 예시
+
+💥 Reentrancy Attack Test
+공격자 컨트랙트 잔액: 11.0 ETH
+✔ 💸 공격자가 재진입 공격으로 잔액을 탈취할 수 있어야 한다
+
+🛡️ SecureBank - 재진입 공격 방어 테스트
+✔ 공격자가 공격을 시도해도 트랜잭션이 revert되어야 한다
+
+✅ SecureBank - 정상 입출금 테스트
+✔ 사용자가 입금 후 출금하면 잔액이 0이 되어야 한다
 
 ---
 
@@ -80,4 +94,3 @@ npx hardhat test
 - [Making Smart Contracts Smarter (Luu et al., 2016)](https://arxiv.org/abs/1608.06993)
 - [The DAO Hack Explained – NYTimes](https://www.nytimes.com/2016/06/18/business/dealbook/hacker-may-have-removed-more-than-50-million-from-experimental-cybercurrency-project.html)
 - [OpenZeppelin ReentrancyGuard](https://docs.openzeppelin.com/contracts/4.x/api/security#ReentrancyGuard)
-```
