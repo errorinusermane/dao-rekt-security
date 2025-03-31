@@ -1,0 +1,31 @@
+{
+  "name": "dao-rekt-security",
+  "version": "1.0.0",
+  "description": "재진입 공격(Reentrancy Attack)을 통한 DAO 해킹 사례를 실습을 통해 재현하고, Solidity와 Hardhat을 이용해 그 방어 방법을 구현한 프로젝트입니다.",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/errorinusermane/dao-rekt-security.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/errorinusermane/dao-rekt-security/issues"
+  },
+  "homepage": "https://github.com/errorinusermane/dao-rekt-security#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19"
+  }
+}
