@@ -1,0 +1,13 @@
+# node
+node_modules/
+package-lock.json
+
+# hardhat build files
+artifacts/
+cache/
+
+# environment
+.env
+
+# OS
+.DS_Store
